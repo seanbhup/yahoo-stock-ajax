@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0090)file:///Users/SeanBhupathi/Desktop/DigitalCrafts/11-16immersive/unit1/blackjack/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+
+	<link rel="stylesheet" type="text/css" href="./Blackjack!_files/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./Blackjack!_files/styles.css">
+
+	<script type="text/javascript" src="./Blackjack!_files/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="js/scripts.js"></script> -->
+	<script type="text/javascript" src="./Blackjack!_files/scripts2.js"></script>
+
+	<title>Blackjack!</title>
+</head>
+<body>
+
+<!-- Layout:
+Create an element for our table. Turn it green, and give it a white border.
+Create an element for the dealer's hand and for the player's hand.
+Create an element for the dealer's total and the player's total.
+Create an element for each card in each hand, a maximum of 6 cards. 
+Assign a generic class to each card and a unique class to each card so we style and target 
+Make a Deal, hit, and stand button -->
+
+<div class="container text-center">
+	<div class="row title text-center">BLACKJACK</div>
+	<div class="row">
+		<!-- The table element -->
+		<div class="the-table col-sm-8 col-sm-offset-2">
+			<!-- The dealer element -->
+			<div class="row">
+				<div class="col-sm-12 dealer-hand-wrapper">
+					<!-- Dealer total -->
+					<div class="col-sm-2 dealer-total">
+						Dealer total: <span class="dealer-total-number">0</span>
+					</div>
+					<div class="col-sm-10 dealer-cards">
+						<div class="card card-1"></div>
+						<div class="card card-2"></div>
+						<div class="card card-3"></div>
+						<div class="card card-4"></div>
+						<div class="card card-5"></div>
+						<div class="card card-6"></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- The player element -->
+			<div class="row">
+				<div class="col-sm-12 player-hand-wrapper">
+					<!-- Player total -->
+					<div class="col-sm-2 player-total">
+						Player total: <span class="player-total-number">0</span>
+					</div>
+					<div class="col-sm-10 player-cards">
+						<div class="card card-1"></div>
+						<div class="card card-2"></div>
+						<div class="card card-3"></div>
+						<div class="card card-4"></div>
+						<div class="card card-5"></div>
+						<div class="card card-6"></div>
+					</div>
+				</div>
+			</div>
+			<!-- the buttons -->
+			<div class="row">
+				<div class="button-wrapper col-sm-2 col-sm-offset-2">
+					<button class="button deal-button" id="deal" todo="hide">Deal</button>
+				</div>
+				<div class="col-sm-2 col-sm-offset-1">
+					<button class="button hit-button">Hit</button>
+				</div>
+				<div class="col-sm-2 col-sm-offset-1">
+					<button class="button stand-button">Stand</button>
+				</div>
+			</div>
+			<div class="row">
+				<input type="button" id="restart-game" value="Restart Game" onclick="window.location.reload()">
+			</div>
+			<div class="row">
+				<button onclick="reset()" id="restart-game">Reset Game</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body></html>

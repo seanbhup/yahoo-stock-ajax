@@ -1,0 +1,271 @@
+body{
+	overflow: hidden;
+}
+
+.stock-title{
+	color: black;
+	margin-bottom: 20px;
+}
+#pages{
+	/* Make the pages div twice the width of the screen */
+	width: 300vw;
+}
+
+#page1, #page2, #page3{
+	width: 100vw;
+	float: left;
+	height: 100vh;
+	position: relative;
+	transition: all 1s;
+	right: 0px;
+}
+
+.table{
+	color: black;
+	background-color: #EAE0CC;
+	margin-top: 20px;
+}
+
+.positive-change{
+	background-color: #A0A083;
+}
+
+.negative-change{
+
+}
+
+#arrow1, #arrow2, #arrow3, #arrow4{
+	position: absolute;
+	top: 50%;
+	background-color: #4D6A6D;
+	color: black;
+	font-size: 40px;
+}
+
+#arrow1{
+	right: 0px;
+}
+
+#arrow2{
+	left: 0px;
+}
+
+#arrow3{
+	right: 0px;
+}
+
+#arrow4{
+	left: 0px;
+}
+
+#link{
+	position: absolute;
+	left: 0px;
+}
+
+.get-quote-btn{
+	width: 200px;
+	background-color: #CEEDDB;
+}
+
+.bookmark-btn{
+	width: 200px;
+	background-color: #C9ADA1
+}
+
+#symbol{
+	width: 400px;
+
+}
+
+html{
+	height: 100%;
+	background-color: #4D6A6D;
+}
+
+body{
+	background-color: #4D6A6D;
+}
+
+img{
+	height: 120px;`
+	/* width: 100%; */
+	/* position: absolute; */
+	/* left: 0px; */
+	border-radius: 5px;
+}
+
+.container1{
+	perspective: 300px;
+}
+
+img:hover{
+	transform: rotate(360deg);
+	transition: all 1s;
+}
+
+.deck{
+	position: absolute;
+}
+
+.title{
+	font-size: 50px;
+	color: #06302f;
+}
+
+.bets-wrapper{
+	width: 250px;
+}
+
+.total-cash{
+	width: 250px;
+	margin-top: 200px;
+	font-size: 50px;
+}
+
+#total-cash-value{
+	color: #065C27;
+}
+
+.bets{
+	font-family: Lucida Console;
+	font-size: 50px;
+	width: 250px;
+}
+
+.bet-button{
+	width: 250px;
+	font-size: 24px;
+	margin-bottom: 10px;
+	border-radius: 20px;
+	background-color: #A2A79E;
+	border: 1px solid black;
+	box-shadow: 1px 5px 4px black;
+}
+
+.bet-button:hover{
+	background-color: #A4BD99;
+}
+
+.the-table{
+	position: absolute;
+	background-color: #559e83;
+	/* border: 4px solid #06302f; */
+	border-bottom: 10px solid #06302f;
+	border-top: 1px solid #06302f;
+	border-left: 3px solid #06302f;
+	border-right: 3px solid #06302f;
+	border-radius: 10px 10px 45% 45%;
+	box-shadow: 0px 10px 10px 10px #a6a6a6;
+	margin-top: 50px;
+	/* text-align: center; */
+	padding: 30px 0px;
+	color: white;
+	font-size: 16px;
+	font-family: Lucida Console;
+	transform: rotateX(10deg);
+	/* transform: skew(10deg); */
+}
+
+.card{
+	position: relative;
+	display: inline-block;
+	height: 120px;
+	border-radius: 5px;
+	/* width: 60px; */
+	width: 12.6%;
+	color: black;
+	margin: 5px;
+	/* border: 1px solid black; */
+	background-color: #559e83;
+	/* background-image: url(""); */
+}
+
+.button-wrapper{
+}
+
+.button{
+	width: 75px;
+	font-size: 18px;
+	border-radius: 20px;
+	/* transform: skew(-10deg); */
+	/* border: .5px solid blue; */
+	border: none;
+	color: black;
+	border: 1px solid black;
+	box-shadow: 1px 5px 4px black;
+	font-family: Lucida Console;
+}
+
+.deal-button{
+	background-color: #1b85b8;
+}
+
+.hit-button{
+	background-color: #ae5a41;
+}
+
+.hit-button:hover{
+	background-color: green;
+}
+
+.stand-button{
+	background-color: #c3cb71;
+}
+
+.stand-button:hover{
+	background-color: red;
+}
+
+#restart-game{
+	background-color: #559e83;
+	margin-top: 50px;
+	color: black;
+	border-radius: 20px;
+	box-shadow: 1px 5px 4px black;
+	/* border: 1px solid black */
+	/* transform: skew(-10deg); */
+}
+
+.player-total{
+	/* transform: skew(-10deg); */
+}
+
+.dealer-total{
+	/* transform: skew(-10deg); */
+}
+
+.end-game{
+}
+
+.end-game-message{
+	font-size: 42px;
+	font-family: Lucida Console;
+	color: red;
+	font-weight: bold;
+}
+
+.end-game-animation{
+	animation: color-change 2s infinite;
+	height: 200px;
+}
+
+@-webkit-keyframes color-change{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@keyframes color-change{
+	0%{
+		background: url("https://www.base64-image.de/build/img/mr-base64-482fa1f767.png")
+	}
+	33%{
+		background: url("https://slack-imgs.com/?c=1&url=https%3A%2F%2Fi.imgsafe.org%2F8396754945.png")
+	}
+	66%{
+		background: url("https://www.base64-image.de/build/img/mr-base64-482fa1f767.png");
+	}
+	100%{
+		background: url("https://slack-imgs.com/?c=1&url=https%3A%2F%2Fs23.postimg.org%2F7dzmz2srv%2Fdownload1.png")
+	}
+}
