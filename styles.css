@@ -3,8 +3,9 @@ body{
 }
 
 .stock-title{
-	color: black;
+	color: #EAE0CC;
 	margin-bottom: 20px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 #pages{
 	/* Make the pages div twice the width of the screen */
@@ -24,6 +25,7 @@ body{
 	color: black;
 	background-color: #EAE0CC;
 	margin-top: 20px;
+	box-shadow: 1px 5px 4px black;
 }
 
 .positive-change{
@@ -66,15 +68,21 @@ body{
 .get-quote-btn{
 	width: 200px;
 	background-color: #CEEDDB;
+	box-shadow: 1px 5px 4px black;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .bookmark-btn{
 	width: 200px;
-	background-color: #C9ADA1
+	background-color: #C9ADA1;
+	box-shadow: 1px 5px 4px black;
 }
 
 #symbol{
 	width: 400px;
+	box-shadow: 1px 5px 4px black;
+
 
 }
 

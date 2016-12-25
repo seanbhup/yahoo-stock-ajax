@@ -79,8 +79,9 @@ $(document).ready(function(){
 			
 			// console.log(stockInfo);
 		// console.log("Where is JS");
-
 	});
+
+
 	function buildStockRow(stock){
 	if (stock.Change.indexOf('+') > -1) {
        	var classChange = "success";
